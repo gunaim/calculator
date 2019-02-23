@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="az" style="overflow-x: hidden; max-width: 100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="frq-templates/libs/normalize.css/normalize.css">
+    <script type="text/javascript">
+        window.onerror = function (errorMsg, url, lineNumber) {
+            var s = '';
+            s += "Javascript error!";
+            s += "\n----------------------------------------\n";
+            s += errorMsg;
+            s += "\nFile : " + url;
+            s += "\nLine : " + lineNumber;
+            alert(s);
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="frq-templates/libs/jquery/dist/jquery.min.js"><\/script>')</script>
+    <link rel="stylesheet" type="text/css" href="frq-templates/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="frq-templates/libs/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="frq-templates/css/main.css">
+</head>
+
+<body style="max-width: 100%; overflow-x: hidden;word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<main>
+    <section class="calculator">
+        <h1>Calculator</h1>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <form name="calculator">
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="amount">AMOUNT</label>
+                            <input type="number" class="form-control" id="amount" name="amount" value="500">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="duration">DURATION</label>
+                            <select class="selectpicker" title="12 months" id="duration" name="duration">
+                                <option value="6">6 months</option>
+                                <option value="12" selected>12 months</option>
+                                <option value="24">24 months</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="currency">CURRENCY</label>
+                            <select class="selectpicker" title="AZN" id="currency" name="currency">
+                                <option value="1" selected>AZN</option>
+                                <option value="2">USD</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label for="payment">INTEREST PAYMENT</label>
+                            <select class="selectpicker" title="At the end of the term" id="payment" name="payment">
+                                <option value="1">Monthly withdrawal</option>
+                                <option value="2" selected>At the end of the term</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="result">
+                    <h1 class="text-medium mb-40">Result</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="result__earnings">
+                                <p class="result__cost">
+                                    <span id="result__cost-js">52</span>
+                                    <img src="azn.png" alt="azn img">
+                                </p>
+                                <p class="result__earning">Earnings</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="result__earnings" id="result__earnings">
+                                <p class="result__cost">
+                                    <span id="result__amount-js">552</span>
+                                    <img src="azn.png" alt="azn img">
+                                </p>
+                                <p class="result__earning">Total amount</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="frq-templates/libs/popper.js/popper.min.js" type="text/javascript"></script>
+<script src="frq-templates/libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="frq-templates/libs/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="frq-templates/js/main.js"></script>
+</body>
+</html>
